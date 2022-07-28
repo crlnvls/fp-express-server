@@ -1,0 +1,19 @@
+version: '3'
+name: express-compose
+services:
+  api:
+    container_name: express-compose-api
+    image: node:latest
+    volumes:
+      - ./:/code
+      - visits:/data
+    working_dir: /code
+    ports: 
+      - 3000:3000
+    environment:
+      - PORT=3000
+    command: bash -c "npm install && npm run dev"
+volumes:
+  visits:
+    
+  
