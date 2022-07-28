@@ -3,7 +3,7 @@ name: express-compose
 services:
   api:
     container_name: express-compose-api
-    image: node:latest
+    image: node:slim
     volumes:
       - type: bind
         source: ./
