@@ -1,0 +1,27 @@
+{
+  "name": "fp-express-server",
+  "version": "1.0.0",
+  "description": "Some example code for helping to teach people how to containerise an express server",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mklilley/fp-express-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mklilley/fp-express-server/issues"
+  },
+  "homepage": "https://github.com/mklilley/fp-express-server#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.1"
+  }
+}
