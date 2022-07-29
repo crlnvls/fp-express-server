@@ -1,16 +1,11 @@
 version: '3'
 name: express-compose
 services:
-  client:
-    container_name: simple-client
-    image: mklilley/fp-simple-client
-    ports: 
-      - 80:80
   api:
     container_name: express-compose-api
     image: node:slim
     volumes:
-      - ./:/code
+      - ./api:/code
       - visits:/data
     working_dir: /code
     ports: 
