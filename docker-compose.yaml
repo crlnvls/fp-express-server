@@ -13,20 +13,15 @@ services:
       - 8080:8080
     command: bash -c "npm install && npm run start"
   api:
-    container_name: express-compose-api
+    container_name: quotes-api
     image: node:slim
     volumes:
       - type: bind
         source: ./api
         target: /code
-      - type: volume
-        source: visits
-        target: /data
     working_dir: /code
     ports:
       - 3000:3000
     environment:
       - PORT=3000
     command: bash -c "npm install && npm run dev"
-volumes:
-  visits:
