@@ -24,3 +24,4 @@ services:
     command: bash -c "npm install && npm run dev"
 volumes:
   visits:
+# volumes = stores info
